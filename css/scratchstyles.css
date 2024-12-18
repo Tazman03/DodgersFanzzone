@@ -1,0 +1,107 @@
+
+.text-right{
+  text-align: right;
+}
+
+
+.center-text {
+  text-align: center; /* Center align text */
+}
+.text-left{
+  text-align: left;
+  color: rgb(92, 84, 84);
+}
+
+.homebg {
+  background-image: url("../images/Dodgers main logo.png"); /* Fixed image path */
+  background-position: top right;
+  background-repeat: no-repeat; /* Fixed background repeat */
+}
+.centerimage{
+  margin: auto;
+  display: block;
+}
+.imageright {
+  display: block;
+  float: right;
+  margin-left: auto;
+  margin-right: 100px;
+  width: 50%; /* Adjust the width to your preference */
+  max-width: 200px; /* Set a max-width to prevent the image from becoming too large */
+  height: auto; /* Maintain the aspect ratio */
+  position: relative;
+  padding-bottom: 1%;
+  top: -100px;
+}
+
+
+.bold {
+  font-weight: bold;
+}
+.textcolor{
+  color: #ddd;
+}
+.textindent{
+  text-indent: 30px;
+}
+.no-numbers {
+  list-style-type: none;
+  padding: 0; /* Optional: Remove padding if needed */
+  margin: 0; /* Optional: Adjust margin */
+}
+.resumelistheading {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.highlight {
+  background-color: blue;
+  color: white;
+  font-family: 'Courier New', monospace;
+  font-size: 30px;
+  padding: 0.3em;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+  text-transform: uppercase; /* Make text uppercase */
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Table styles */
+.championships-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.championships-table th,
+.championships-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.championships-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.championships-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.championships-table tr:hover {
+  background-color: #ddd;
+}
