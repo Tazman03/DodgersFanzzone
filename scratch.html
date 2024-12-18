@@ -189,7 +189,161 @@
         </object>
     </div>
 </div>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
 
+    /* Quiz container to isolate it from the rest of the content */
+    #quiz-container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 80%;
+        max-width: 600px; /* Limit the width for better layout */
+        margin: 20px auto; /* Center align the quiz container */
+    }
+
+    h1 {
+        color: #0066cc;
+    }
+
+    button {
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #004d99;
+    }
+
+    .question {
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .answers {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    #result {
+        font-weight: bold;
+    }
+
+    .highlight {
+        background-color: blue;
+        color: white;
+        font-family: 'Courier New', monospace;
+        font-size: 20px;
+        padding: 0.3em;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        text-transform: uppercase;
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+    /* Adjust page layout if other content is present */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Your other website content goes here -->
+
+    <!-- Quiz Section -->
+    <div id="quiz-container">
+        <h1>Dodgers Trivia Game</h1>
+        <form action="quiz_results.html" method="POST">
+            <div class="question">
+                <p>1. Who is the Dodgers all-time home run leader?</p>
+                <div class="answers">
+                    <input type="radio" id="q1a1" name="q1" value="Mike Piazza">
+                    <label for="q1a1">Mike Piazza</label><br>
+                    <input type="radio" id="q1a2" name="q1" value="Clayton Kershaw">
+                    <label for="q1a2">Clayton Kershaw</label><br>
+                    <input type="radio" id="q1a3" name="q1" value="Mookie Betts">
+                    <label for="q1a3">Mookie Betts</label><br>
+                    <input type="radio" id="q1a4" name="q1" value="Justin Turner">
+                    <label for="q1a4">Justin Turner</label><br>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. What year did the Dodgers win the World Series?</p>
+                <div class="answers">
+                    <input type="radio" id="q2a1" name="q2" value="2020">
+                    <label for="q2a1">2020</label><br>
+                    <input type="radio" id="q2a2" name="q2" value="1988">
+                    <label for="q2a2">1988</label><br>
+                    <input type="radio" id="q2a3" name="q2" value="1977">
+                    <label for="q2a3">1977</label><br>
+                    <input type="radio" id="q2a4" name="q2" value="1963">
+                    <label for="q2a4">1963</label><br>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. Who is the Dodgers' all-time hits leader?</p>
+                <div class="answers">
+                    <input type="radio" id="q3a1" name="q3" value="Pete Rose">
+                    <label for="q3a1">Pete Rose</label><br>
+                    <input type="radio" id="q3a2" name="q3" value="Jackie Robinson">
+                    <label for="q3a2">Jackie Robinson</label><br>
+                    <input type="radio" id="q3a3" name="q3" value="Duke Snider">
+                    <label for="q3a3">Duke Snider</label><br>
+                    <input type="radio" id="q3a4" name="q3" value="Pedro Guerrero">
+                    <label for="q3a4">Pedro Guerrero</label><br>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>4. Which stadium do the Dodgers play in?</p>
+                <div class="answers">
+                    <input type="radio" id="q4a1" name="q4" value="Dodger Stadium">
+                    <label for="q4a1">Dodger Stadium</label><br>
+                    <input type="radio" id="q4a2" name="q4" value="Fenway Park">
+                    <label for="q4a2">Fenway Park</label><br>
+                    <input type="radio" id="q4a3" name="q4" value="Wrigley Field">
+                    <label for="q4a3">Wrigley Field</label><br>
+                    <input type="radio" id="q4a4" name="q4" value="Yankee Stadium">
+                    <label for="q4a4">Yankee Stadium</label><br>
+                </div>
+            </div>
+
+            <button type="submit">Submit Answers</button>
+        </form>
+
+        <br>
+        <div class="center-text">
+            <div class="highlight">
+                <p><strong>Answers:</strong></p>
+                <ul>
+                    <li>1. Mike Piazza</li>
+                    <li>2. 2020</li>
+                    <li>3. Pete Rose</li>
+                    <li>4. Dodger Stadium</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 <footer>
     <p>© 2024 Dodger Fans Rule</p>
 </footer>
